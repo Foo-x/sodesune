@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css"
+    />
+    <title>そーですね。</title>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-mobile is-centered">
+          <div class="column is-narrow">
+            <button class="button is-info" onclick="sound()">
+              そーですね。
+            </button>
+            <audio id="sound" preload="auto" src="sodesune.m4a">
+              Your browser does not support the <code>audio</code> element.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const sound = () => {
+        document.getElementById("sound").play();
+      };
+    </script>
+  </body>
+</html>
